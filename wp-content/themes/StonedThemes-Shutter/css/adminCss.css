@@ -1,0 +1,12 @@
+#acf-field-font_awesome
+{
+	 font-family: FontAwesome,arial;
+    font-size: 24px;
+    width: 80px;
+}
+[data-field_name |= details_icon]
+{
+	font-family: FontAwesome,arial;
+    font-size: 24px;
+    width: 80px;
+}

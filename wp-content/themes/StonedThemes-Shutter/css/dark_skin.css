@@ -1,0 +1,388 @@
+body{
+	background: #151515;
+	color: #656565;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #ffffff;
+}
+
+a{
+	color: #656565;
+}
+
+a:hover{
+	color: #ffba00;/*brand*/
+}
+
+p{
+	color: #656565;
+}
+
+.nav1{
+	background: #151515;
+}
+
+.nav2 a, .nav2 span{
+	color: #656565;
+}
+
+.nav2 a:hover span, .nav2 a:hover{
+	color: #ffba00;/*brand*/
+}
+
+.full-screen{
+	background: #ffffff;
+	color: #151515;
+}
+
+.overlay.dark{
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.overlay.dark5{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay-container h1, .overlay-container h2, .overlay-container h3, .overlay-container h4, .overlay-container h5, .overlay-container h6, .overlay-container p, .overlay-container span{
+	color: #151515;
+}
+
+.overlay.brand-color{
+	background: rgba(255, 186, 0, 0.8);
+}
+
+.overlay.brand-color5{
+	background: rgba(255, 186, 0, 0.5);
+}
+
+.small-gallery-container{
+	background: #151515;
+}
+
+.button{
+	color: #656565;
+}
+
+.button.dark{
+	color: #151515;
+}
+
+.button.dark:hover{
+	color: #ffba00; /*brand*/
+}
+
+.member-social{
+	color: #656565;
+}
+
+.like{
+	background: #151515;
+	color: #ffffff;
+}
+
+.text-light{
+	color: #656565;
+}
+
+.text-dark{
+	color: #ffffff;
+}
+
+.filters a{
+	color: #656565;
+}
+
+.filters a:hover{
+	color: #ffba00; /*brand*/
+}
+
+.filters > ul:first-child li:before{
+	color: #656565;
+}
+
+.filter-text ul{
+	background: #151515;
+	border: 1px solid #272727;
+}
+
+.filter-text ul li a{
+	border-bottom: 1px solid #272727;
+}
+
+.service .img-circle.bordered{
+	color: #272727;
+}
+
+.brand-color{
+	color: #ffba00; /*brand*/
+}
+
+.service:hover .mosaic-inside{
+	background: #272727;
+}
+
+input[type="text"], textarea{
+	border: 2px solid #272727;
+	background: #151515;
+	color: #656565;
+}
+
+input[type="text"]:focus, textarea:focus{
+	border: 2px solid #ffba00;
+}
+
+.comments input[type="submit"]#submit, .post-comment{
+	color: #656565;
+	border: 2px solid #272727;
+}
+
+.comments input[type="submit"]#submit:hover, .post-comment:hover{
+	background: #272727;
+	color: #fff;
+}
+
+.current-comments{
+	border-top: 2px solid #272727;
+}
+
+.current-comments li{
+	border-bottom: 2px solid #272727;
+}
+
+ul.children li:before {
+	border-left: 2px solid #272727;
+	border-bottom: 2px solid #272727;
+}
+
+h2.comment-user{
+	color: #656565;
+}
+
+.comment-reply-link input[type="submit"]{
+	color: #ffba00; /*brand*/
+}
+
+.comment-reply-link span{
+	color: #ffba00; /*brand*/
+}
+
+.map-border{
+	background: #272727;
+}
+
+.contact-item-text{
+	background: #151515;
+	color: #656565;
+}
+
+.contact-item-icon{
+	background: #151515;
+	color: #ffba00; /*brand*/
+}
+
+.background-pattern{
+	background: #272727;
+}
+
+.main-menu {
+	border-bottom: 1px solid #272727;
+	background: #151515;
+}
+
+.main-menu ul li{
+	background: #151515;
+}
+
+.main-menu ul ul{
+	border: 1px solid #272727;
+	border-top: 0;
+}
+
+.main-menu ul ul li{
+	border: 1px solid #272727;
+}
+
+.main-menu ul ul li:last-child{
+	border-bottom: 0;
+}
+
+.stonedBox.dark{
+	background: rgba(255, 255, 255, 0.85);
+}
+
+.box{
+	border: 2px solid #ffba00; /*brand*/
+}
+
+.ha-service{
+	border-bottom: 2px solid #272727;
+}
+
+.ha-service .mosaic-inside{
+	background: #272727;
+}
+
+.pricing-col-header{
+	border: 1px solid #272727;
+}
+
+.pricing-col ul li{
+	border: 1px solid #272727;
+}
+
+.pricing-col ul li:last-child{
+	border-bottom: 1px solid #272727;
+}
+
+.pricing-col ul li:nth-child(even){
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.important{
+	background: #ffba00; /*brand*/
+}
+
+.accordion-title p{
+	border-top: 1px solid #272727;
+	border-bottom: 1px solid #272727;
+}
+
+.accordion-title a.collapsed{
+	color: #656565;
+}
+
+.tab-content{
+	border-bottom: 1px solid #272727;
+}
+
+.nav-tabs > li > a{
+	border: 1px solid #272727;
+	color: #656565;
+}
+
+.nav-tabs > li:last-child > a{
+	border-right: 1px solid #272727;
+}
+
+.nav-tabs > li > a:hover{
+	border-color: #272727 #272727 #272727;
+	color: #ffba00; /*brand*/
+}
+
+.nav-tabs > li.active > a{
+	color: #272727;
+}
+
+.nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	color: #ffba00; /*brand-color*/
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #272727;
+}
+
+.blockquote, .blockquote2{
+	background: #272727;
+}
+
+.text .author{
+	color: #ffffff;
+}
+
+.widget #searchsubmit{
+	background: #272727;
+}
+
+.widget ul {
+	border: 2px solid #272727;
+}
+
+.widget ul li{
+	color: #656565;
+	border-bottom: 2px solid #272727;
+}
+
+.widget .menu li a:hover{
+	color: #ffba00; /*brand color*/
+}
+
+.left-gradient-overlay{
+	background: -webkit-linear-gradient(left, #151515, rgba(21, 21, 21, 0));
+	background: -o-linear-gradient(right, #151515, rgba(21, 21, 21, 0));
+	background: -moz-linear-gradient(right, #151515, rgba(21, 21, 21, 0));
+	background: linear-gradient(to right, #151515, rgba(21, 21, 21, 0));
+}
+
+.right-gradient-overlay{
+	background: -webkit-linear-gradient(right, #151515, rgba(21, 21, 21, 0));
+	background: -o-linear-gradient(left, #151515, rgba(21, 21,21 21, 0));
+	background: -moz-linear-gradient(left, #151515, rgba(21, 21, 21, 0));
+	background: linear-gradient(to left, #151515, rgba(21, 21, 21, 0));
+}
+
+footer{
+	border-top: 1px solid #272727;
+	background: #151515;
+}
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer span{
+	color: #656565;
+}
+
+@media (max-width: 992px){
+	.main-menu ul li, .main-menu ul ul li{
+		background: rgba(21, 21, 21, 1);
+	}
+
+	.main-menu ul:first-child:before{
+		background: rgba(21,21,21, 1);
+		border-top: 1px solid #272727;
+	}
+
+	.main-menu ul li a{
+		border-top: 1px solid #272727;
+	}
+}
+
+.alt-filtering{
+	border-bottom: 1px solid #272727;
+}
+
+.alt-filtering a{
+	border: 1px solid #272727;
+	color: #656565;
+}
+
+.alt-filtering > a:after{
+	color: #656565;
+}
+
+.alt-filtering a:hover, .alt-filtering > a:hover:after{
+	color: #ffba00;
+}
+
+.alt-filtering ul li:last-child a{
+	border-bottom: 1px solid #272727;
+}
+
+.alt-filtering ul{
+	background: #151515;
+}
+
+#gallery-slider-small{
+	background: #272727;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	background: #272727;
+	color: #656565;
+	border-color: #272727;
+}
+
+.button.black{
+	color: #272727;
+}
+
+.button.black.filled {
+	background: #272727;
+}

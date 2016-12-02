@@ -1,0 +1,688 @@
+.page-template-template_titledSlider-php, 
+.page-template-template_titledSlider-php .container, 
+.page-template-template_titledSlider-php .slideshow, 
+.page-template-template_titledSlider-php .slides{
+	height: 100%;
+}
+
+.page-template-template_titledSlider-php .container{
+	width: 100%;
+	padding: 0;
+}
+
+.page-template-template_titledSlider-php .slideshow {
+	position: relative;
+	//margin-bottom: 100px;
+}
+
+.page-template-template_titledSlider-php .slides {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	//height: 500px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	//background: #ddd;
+	color: #151515;
+}
+
+.page-template-template_titledSlider-php .no-js .slides {
+	height: auto;
+}
+
+.page-template-template_titledSlider-php .slides > li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	visibility: hidden;
+	-webkit-perspective: 1600px;
+	perspective: 1600px;
+}
+
+.page-template-template_titledSlider-php .no-js .slides > li {
+	position: relative;
+	visibility: visible;
+}
+
+.page-template-template_titledSlider-php .slideshow > nav {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.page-template-template_titledSlider-php .slideshow > nav{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.page-template-template_titledSlider-php .slideshow > nav span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-top: none;
+	border-bottom: none;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+	margin: 10px 3px;
+	transition: border-color 0.2s;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+}
+
+.page-template-template_titledSlider-php .slideshow > nav span:hover {
+	border-color: #ffba00;
+}
+
+.page-template-template_titledSlider-php .slideshow > nav span.current {
+	border-color: #ffba00;
+}
+
+.page-template-template_titledSlider-php .description {
+	width: 50%;
+	padding: 2em 4em;
+	font-size: 1.5em;
+	position: relative;
+	z-index: 1000;
+	opacity: 0;
+}
+
+.page-template-template_titledSlider-php .no-js .description {
+	opacity: 1;
+}
+
+.page-template-template_titledSlider-php .description h2 {
+	font-size: 200%;
+}
+
+.page-template-template_titledSlider-php .tiltview {
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	top: 50%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateY(-50%) rotateX(60deg) rotateZ(35deg);
+	transform: translateY(-50%) rotateX(60deg) rotateZ(35deg);
+}
+
+.page-template-template_titledSlider-php .tiltview a {
+	outline: 1px solid transparent;
+}
+
+.page-template-template_titledSlider-php .tiltview a,
+.page-template-template_titledSlider-php .tiltview a img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.page-template-template_titledSlider-php .tiltview a:first-child {
+	margin-bottom: 30px;
+}
+
+.page-template-template_titledSlider-php .tiltview.row a {
+	width: 48%;
+	width: calc(50% - 15px);
+	margin: 0;
+}
+
+.page-template-template_titledSlider-php .tiltview.row a:nth-child(2) {
+	left: 50%;
+	left: calc(50% + 15px);
+	position: absolute;
+	top: 0;
+}
+
+/* Show/Hide */
+.page-template-template_titledSlider-php .slides > li.current,
+.page-template-template_titledSlider-php .slides > li.show {
+	visibility: visible;
+}
+
+.page-template-template_titledSlider-php .description {
+	transition: opacity 0.75s;
+}
+
+.page-template-template_titledSlider-php .current .description,
+.page-template-template_titledSlider-php .show .description {
+	opacity: 1;
+}
+
+.page-template-template_titledSlider-php .hide .description {
+	opacity: 0;
+}
+
+.page-template-template_titledSlider-php .show, .page-template-template_titledSlider-php .hide{
+	display: initial !important;
+}
+
+.slideshow img {
+	box-shadow: #151515 3px 3px 4px 2px;
+}
+
+/* Individual effects */
+
+/* Move Up, Move Down, Slide Up, Slide Down, Slide Left, Slide Right */
+/* For each effect we'll define the incoming and outgoing animation */
+
+/***********************/
+/* Move up */
+/***********************/
+.page-template-template_titledSlider-php .hide[data-effect-out="moveUpOut"] .tiltview a {
+	-webkit-animation: moveUpOut 1.5s both;
+	animation: moveUpOut 1.5s both;
+}
+
+.page-template-template_titledSlider-php .hide[data-effect-out="moveUpOut"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes moveUpOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(-30px);
+	}
+	100% {
+		-webkit-transform: translateZ(3000px);
+	}
+}
+
+@keyframes moveUpOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(-30px);
+		transform: translateZ(-30px);
+	}
+	100% {
+		-webkit-transform: translateZ(3000px);
+		transform: translateZ(3000px);
+	}
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="moveUpIn"] .tiltview a {
+	-webkit-animation: moveUpIn 1.5s 0.5s both;
+	animation: moveUpIn 1.5s 0.5s both;
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="moveUpIn"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+@-webkit-keyframes moveUpIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(-3000px);
+	}
+	75% {
+		-webkit-transform: translateZ(30px);
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+	}
+}
+
+@keyframes moveUpIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(-3000px);
+		transform: translateZ(-3000px);
+	}
+	75% {
+		-webkit-transform: translateZ(30px);
+		transform: translateZ(30px);
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+/***********************/
+/* Move down */
+/***********************/
+.page-template-template_titledSlider-php .hide[data-effect-out="moveDownOut"] .tiltview a {
+	-webkit-animation: moveDownOut 1.5s both;
+	animation: moveDownOut 1.5s both;
+}
+
+.page-template-template_titledSlider-php .hide[data-effect-out="moveDownOut"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes moveDownOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(30px);
+	}
+	100% {
+		-webkit-transform: translateZ(-3000px);
+	}
+}
+
+@keyframes moveDownOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(30px);
+		transform: translateZ(30px);
+	}
+	100% {
+		-webkit-transform: translateZ(-3000px);
+		transform: translateZ(-3000px);
+	}
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="moveDownIn"] .tiltview a {
+	-webkit-animation: moveDownIn 1.5s 0.5s both;
+	animation: moveDownIn 1.5s 0.5s both;
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="moveDownIn"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+@-webkit-keyframes moveDownIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(3000px);
+	}
+	75% {
+		-webkit-transform: translateZ(-30px);
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+	}
+}
+
+@keyframes moveDownIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateZ(3000px);
+		transform: translateZ(3000px);
+	}
+	75% {
+		-webkit-transform: translateZ(-30px);
+		transform: translateZ(-30px);
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+/***********************/
+/* Slide up */
+/***********************/
+.page-template-template_titledSlider-php .hide[data-effect-out="slideUpOut"] .tiltview a {
+	-webkit-animation: slideUpOut 1.5s both;
+	animation: slideUpOut 1.5s both;
+}
+
+.page-template-template_titledSlider-php .hide[data-effect-out="slideUpOut"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes slideUpOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(30px);
+	}
+	100% {
+		-webkit-transform: translateY(-3000px);
+	}
+}
+
+@keyframes slideUpOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	100% {
+		-webkit-transform: translateY(-3000px);
+		transform: translateY(-3000px);
+	}
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideUpIn"] .tiltview a {
+	-webkit-animation: slideUpIn 1.5s 0.5s both;
+	animation: slideUpIn 1.5s 0.5s both;
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideUpIn"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+@-webkit-keyframes slideUpIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(3000px);
+	}
+	75% {
+		-webkit-transform: translateY(-30px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@keyframes slideUpIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(3000px);
+		transform: translateY(3000px);
+	}
+	75% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+/***********************/
+/* Slide down */
+/***********************/
+.page-template-template_titledSlider-php .hide[data-effect-out="slideDownOut"] .tiltview a {
+	-webkit-animation: slideDownOut 1.5s both;
+	animation: slideDownOut 1.5s both;
+}
+
+.page-template-template_titledSlider-php .hide[data-effect-out="slideDownOut"] .tiltview.row a:nth-child(2),
+.page-template-template_titledSlider-php .hide[data-effect-out="slideDownOut"] .tiltview.col a:first-child {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes slideDownOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(-30px);
+	}
+	100% {
+		-webkit-transform: translateY(3000px);
+	}
+}
+
+@keyframes slideDownOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	100% {
+		-webkit-transform: translateY(3000px);
+		transform: translateY(3000px);
+	}
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideDownIn"] .tiltview a {
+	-webkit-animation: slideDownIn 1.5s 0.5s both;
+	animation: slideDownIn 1.5s 0.5s both;
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideDownIn"] .tiltview.row a:nth-child(2),
+.page-template-template_titledSlider-php .show[data-effect-in="slideDownIn"] .tiltview.col a:first-child {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+@-webkit-keyframes slideDownIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(-3000px);
+	}
+	75% {
+		-webkit-transform: translateY(30px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@keyframes slideDownIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateY(-3000px);
+		transform: translateY(-3000px);
+	}
+	75% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+/***********************/
+/* Slide left */
+/***********************/
+.page-template-template_titledSlider-php .hide[data-effect-out="slideLeftOut"] .tiltview a {
+	-webkit-animation: slideLeftOut 1.5s both;
+	animation: slideLeftOut 1.5s both;
+}
+
+.page-template-template_titledSlider-php .hide[data-effect-out="slideLeftOut"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes slideLeftOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(30px);
+	}
+	100% {
+		-webkit-transform: translateX(-5000px);
+	}
+}
+
+@keyframes slideLeftOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px);
+	}
+	100% {
+		-webkit-transform: translateX(-5000px);
+		transform: translateX(-5000px);
+	}
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideLeftIn"] .tiltview a {
+	-webkit-animation: slideLeftIn 1.5s 0.5s both;
+	animation: slideLeftIn 1.5s 0.5s both;
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideLeftIn"] .tiltview a:nth-child(2) {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+@-webkit-keyframes slideLeftIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(3000px);
+	}
+	75% {
+		-webkit-transform: translateX(-30px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+
+@keyframes slideLeftIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(3000px);
+		transform: translateX(3000px);
+	}
+	75% {
+		-webkit-transform: translateX(-30px);
+		transform: translateX(-30px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+/***********************/
+/* Slide right */
+/***********************/
+.page-template-template_titledSlider-php .hide[data-effect-out="slideRightOut"] .tiltview a {
+	-webkit-animation: slideRightOut 1.5s both;
+	animation: slideRightOut 1.5s both;
+}
+
+.page-template-template_titledSlider-php .hide[data-effect-out="slideRightOut"] .tiltview.col a:nth-child(2),
+.page-template-template_titledSlider-php .hide[data-effect-out="slideRightOut"] .tiltview.row a:first-child {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+@-webkit-keyframes slideRightOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(-30px);
+	}
+	100% {
+		-webkit-transform: translateX(3000px);
+	}
+}
+
+@keyframes slideRightOut {
+	25% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(-30px);
+		transform: translateX(-30px);
+	}
+	100% {
+		-webkit-transform: translateX(3000px);
+		transform: translateX(3000px);
+	}
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideRightIn"] .tiltview a {
+	-webkit-animation: slideRightIn 1.5s 0.5s both;
+	animation: slideRightIn 1.5s 0.5s both;
+}
+
+.page-template-template_titledSlider-php .show[data-effect-in="slideRightIn"] .tiltview.col a:nth-child(2),
+.page-template-template_titledSlider-php .show[data-effect-in="slideRightIn"] .tiltview.row a:first-child {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+@-webkit-keyframes slideRightIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(-5000px);
+	}
+	75% {
+		-webkit-transform: translateX(30px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+
+@keyframes slideRightIn {
+	0% {
+		-webkit-animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+		-webkit-transform: translateX(-5000px);
+		transform: translateX(-5000px);
+	}
+	75% {
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+/* Fallback for no 3D Transforms and no preserve-3d */
+.page-template-template_titledSlider-php .no-csstransformspreserve3d .show .tiltview a,
+.page-template-template_titledSlider-php .no-csstransformspreserve3d .hide .tiltview a,
+.page-template-template_titledSlider-php .no-csstransforms3d .show .tiltview a,
+.page-template-template_titledSlider-php .no-csstransforms3d .hide .tiltview a {
+	-webkit-animation: none !important;
+	animation: none !important;
+}
+
+.page-template-template_titledSlider-php .no-csstransforms3d .tiltview.col {
+	top: -50%;
+}
+
+.page-template-template_titledSlider-php .no-csstransforms3d .tiltview.row {
+	top: 20px;
+}
+
+/* Some media queries */
+@media screen and (max-width: 65.3125em) {
+	.page-template-template_titledSlider-php .description,
+	.page-template-template_titledSlider-php .tiltview {
+		width: 100%;
+	}
+
+	.page-template-template_titledSlider-php .tiltview {
+		left: 0;
+		opacity: 0.3;
+		pointer-events: none;
+	}
+}
+
+@media screen and (max-width: 33.75em) {
+	.page-template-template_titledSlider-php .description {
+		font-size: 1.1em;
+	}
+
+	.page-template-template_titledSlider-php .slideshow > nav span {
+		width: 20px;
+		height: 20px;
+		margin: 10px 5px;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.page-template-template_titledSlider-php .slides {
+		height: 320px;
+	}
+
+	.page-template-template_titledSlider-php .description {
+		font-size: 1em;
+		padding: 1.4em;
+	}
+
+	.page-template-template_titledSlider-php .no-csstransforms3d .tiltview.col,
+	.page-template-template_titledSlider-php .no-csstransforms3d .tiltview.row {
+		top: 0;
+	}
+}

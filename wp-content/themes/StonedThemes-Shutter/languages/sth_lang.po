@@ -1,0 +1,373 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Shutter 1.0\n"
+"POT-Creation-Date: 2016-10-07 19:49+0200\n"
+"PO-Revision-Date: 2016-10-07 19:50+0200\n"
+"Last-Translator: \n"
+"Language-Team: StonedThemes <stonedthemes@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ../../../../../../private/var/root/Desktop/Shutter/"
+"StonedThemes-Shutter\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: advanced-custom-fields\n"
+"X-Poedit-SearchPathExcluded-1: registered-fields\n"
+"X-Poedit-SearchPathExcluded-2: includes/add-ons\n"
+
+#: 404.php:13 includes/dialog-forms.php:201
+msgid "Error"
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"This page doesn’t exist, has been deleted or it’s down for the moment. "
+"Thanks for understanding."
+msgstr ""
+
+#: 404.php:20
+msgid "back to homepage"
+msgstr ""
+
+#: archive.php:9
+msgid "Results"
+msgstr ""
+
+#: archive.php:11 search.php:11
+msgid "No Result found"
+msgstr ""
+
+#: archive.php:12 search.php:12
+msgid "Sorry we couldn't find any results."
+msgstr ""
+
+#: comments.php:3
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:19 woocommerce/single-product-reviews.php:70
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:20
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:21
+msgid "leave comment"
+msgstr ""
+
+#: comments.php:23
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:24
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:43
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:74
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:114
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:124
+msgid "MixPage Sidebar"
+msgstr ""
+
+#: functions.php:133
+msgid "Shop Sidebar"
+msgstr ""
+
+#: includes/comments-template.php:25
+msgid "Pingback:"
+msgstr ""
+
+#: includes/comments-template.php:25
+msgid "(Edit)"
+msgstr ""
+
+#: includes/comments-template.php:34
+msgid ""
+"<input type=\"submit\" value=\"reply\"><span class=\"fa fa-reply\"></span>"
+msgstr ""
+
+#: includes/dialog-forms.php:128 includes/dialog-forms.php:203
+msgid "Title"
+msgstr ""
+
+#: includes/dialog-forms.php:128
+msgid "Content"
+msgstr ""
+
+#: includes/dialog-forms.php:131
+msgid "Add Row"
+msgstr ""
+
+#: includes/dialog-forms.php:132 includes/dialog-forms.php:207
+#: includes/dialog-forms.php:273
+msgid "Get Shortcode"
+msgstr ""
+
+#: includes/dialog-forms.php:196
+msgid "Type"
+msgstr ""
+
+#: includes/dialog-forms.php:198
+msgid "Info"
+msgstr ""
+
+#: includes/dialog-forms.php:199
+msgid "Success"
+msgstr ""
+
+#: includes/dialog-forms.php:200
+msgid "Warning"
+msgstr ""
+
+#: includes/dialog-forms.php:205
+msgid "Message"
+msgstr ""
+
+#: includes/post-types.php:7 includes/post-types.php:8
+msgid "Services"
+msgstr ""
+
+#: includes/post-types.php:20
+msgid "Services Category"
+msgstr ""
+
+#: includes/post-types.php:23
+msgid "Service Category"
+msgstr ""
+
+#: includes/post-types.php:28 includes/post-types.php:29
+msgid "Projects"
+msgstr ""
+
+#: includes/post-types.php:41
+msgid "Projects Category"
+msgstr ""
+
+#: includes/post-types.php:44
+msgid "Project Category"
+msgstr ""
+
+#: includes/post-types.php:51 includes/post-types.php:54
+msgid "Gallery Category"
+msgstr ""
+
+#: includes/woocommerce-functions.php:148
+msgid "View your shopping cart"
+msgstr ""
+
+#: includes/woocommerce-functions.php:186
+msgid "Remove this item"
+msgstr ""
+
+#: includes/woocommerce-functions.php:209
+msgid "No products in the cart."
+msgstr ""
+
+#: includes/woocommerce-functions.php:217
+msgid "Subtotal"
+msgstr ""
+
+#: includes/woocommerce-functions.php:222
+msgid "View Cart"
+msgstr ""
+
+#: includes/woocommerce-functions.php:223
+msgid "Checkout"
+msgstr ""
+
+#: search.php:9
+msgid "Search Results"
+msgstr ""
+
+#: single-project_post.php:9
+msgid "<span><i class=\"fa fa-toggle-left\"></i> Previous Project</span>"
+msgstr ""
+
+#: single-project_post.php:11
+msgid "<span>Next Project <i class=\"fa fa-toggle-right\"></i></span>"
+msgstr ""
+
+#: single-project_post.php:87
+msgid "description"
+msgstr ""
+
+#: single-project_post.php:92
+msgid "Share"
+msgstr ""
+
+#: single.php:56
+msgid "tags"
+msgstr ""
+
+#: single.php:69
+msgid "Enjoyed this article?"
+msgstr ""
+
+#: single.php:69
+msgid "Share it"
+msgstr ""
+
+#: template-homeShop.php:25 template_Horizontal.php:106
+#: template_HorizontalSmall.php:149 template_threeCirlces.php:100
+msgid "PREV."
+msgstr ""
+
+#: template-homeShop.php:27 template_Horizontal.php:108
+#: template_HorizontalSmall.php:151 template_threeCirlces.php:102
+msgid "NEXT"
+msgstr ""
+
+#: template_Horizontal.php:91 template_Horizontal.php:117
+#: template_HorizontalSmall.php:117 template_HorizontalSmall.php:134
+#: template_portfolioMasonry.php:166 template_portfolioMasonry.php:183
+#: template_portfolioMosaic.php:286 template_portfolioMosaic.php:303
+#: template_portfolioSquare3.php:183 template_portfolioSquare3.php:200
+#: template_portfolioSquare4.php:180 template_portfolioSquare4.php:197
+#: template_threeCirlces.php:66 template_threeCirlces.php:84
+msgid "All"
+msgstr ""
+
+#: template_Horizontal.php:114 template_blogMasonry.php:183
+#: template_portfolioMasonry.php:181 template_portfolioMosaic.php:301
+#: template_portfolioSquare3.php:198 template_portfolioSquare4.php:195
+msgid "Filter"
+msgstr ""
+
+#: template_blogCircle.php:184 template_blogCircle.php:197
+#: template_blogMasonry.php:172 template_blogMasonry.php:185
+msgid "all categories"
+msgstr ""
+
+#: template_blogCircle.php:205 template_blogMasonry.php:194
+#: template_portfolioMasonry.php:193 template_portfolioMosaic.php:313
+#: template_portfolioSquare3.php:210 template_portfolioSquare4.php:207
+msgid "Popular"
+msgstr ""
+
+#: template_blogCircle.php:206 template_blogMasonry.php:195
+#: template_portfolioMasonry.php:194 template_portfolioMosaic.php:314
+#: template_portfolioSquare3.php:211 template_portfolioSquare4.php:208
+msgid "Latest"
+msgstr ""
+
+#: template_blogCircle.php:260 template_blogMasonry.php:245
+#: template_portfolioMasonry.php:248 template_portfolioMosaic.php:410
+#: template_portfolioSquare3.php:274 template_portfolioSquare4.php:270
+msgid "load more"
+msgstr ""
+
+#: template_contact1.php:117 template_contact2.php:118
+msgid "Your message was sent successfully!"
+msgstr ""
+
+#: template_contact1.php:119 template_contact2.php:120
+msgid "Message sending failed!"
+msgstr ""
+
+#: template_services.php:24
+msgid "READ MORE"
+msgstr ""
+
+#: widgets/widget-projectsPosts.php:94 widgets/widget-servicePosts.php:75
+msgid "Widget Title"
+msgstr ""
+
+#: widgets/widget-projectsPosts.php:98
+msgid "Number of Posts"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:35
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:56
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:69
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:69
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:74
+#: woocommerce/single-product-reviews.php:75
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:76
+#: woocommerce/single-product-reviews.php:77
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:79
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:85
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Your Rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:94
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:95
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:96
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:97
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:98
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:99
+msgid "Very Poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:105
+msgid "Your Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:114
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
